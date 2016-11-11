@@ -27,7 +27,7 @@ public:
             dp[i][i].first = nums[i];
             dp[i][i].second = 0;
         }
-        
+       
         for(int len = 2; len <= n; ++len){
             for(int i = 0; i + len <= n; ++i){
                 int j = i + len - 1;
